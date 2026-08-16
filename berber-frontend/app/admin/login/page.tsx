@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { api } from '@/lib/api';
@@ -36,7 +36,7 @@ export default function AdminLogin() {
           <h2 className="text-2xl font-serif font-black mt-4 text-center bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent">
             Yönetici Girişi
           </h2>
-          <p className="text-xs text-white/40 mt-1">Luxury Barber Malatya Portal</p>
+          <p className="text-xs text-white/40 mt-1">Vip Hair Designer Malatya Portal</p>
         </div>
 
         <form onSubmit={handleLogin} className="space-y-5">
@@ -76,3 +76,4 @@ export default function AdminLogin() {
     </div>
   );
 }
+

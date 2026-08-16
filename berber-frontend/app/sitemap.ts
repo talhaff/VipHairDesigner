@@ -1,7 +1,7 @@
-import { MetadataRoute } from 'next';
+﻿import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://luxurybarbermalatya.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://viphairdesignermalatya.com';
 
   return [
     {
@@ -18,3 +18,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 }
+

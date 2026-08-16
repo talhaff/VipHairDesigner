@@ -1,13 +1,13 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function JsonLd() {
   const barberShopSchema = {
     '@context': 'https://schema.org',
     '@type': 'BarberShop',
-    'name': 'Luxury Barber Malatya',
-    'image': 'https://luxurybarbermalatya.com/logo.png',
-    '@id': 'https://luxurybarbermalatya.com/#barbershop',
-    'url': 'https://luxurybarbermalatya.com',
+    'name': 'Vip Hair Designer Malatya',
+    'image': 'https://viphairdesignermalatya.com/logo.png',
+    '@id': 'https://viphairdesignermalatya.com/#barbershop',
+    'url': 'https://viphairdesignermalatya.com',
     'telephone': '+904223254400',
     'priceRange': '₺₺',
     'address': {
@@ -89,10 +89,10 @@ export default function JsonLd() {
     'mainEntity': [
       {
         '@type': 'Question',
-        'name': 'Malatya Luxury Barber salonu nerede?',
+        'name': 'Malatya Vip Hair Designer salonu nerede?',
         'acceptedAnswer': {
           '@type': 'Answer',
-          'text': 'Luxury Barber salonumuz Malatya Yeşilyurt Fahri Kayahan Bulvarı üzerinde bulunmaktadır.'
+          'text': 'Vip Hair Designer salonumuz Malatya Yeşilyurt Fahri Kayahan Bulvarı üzerinde bulunmaktadır.'
         }
       },
       {
@@ -127,3 +127,5 @@ export default function JsonLd() {
     </>
   );
 }
+
+

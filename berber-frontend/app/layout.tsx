@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
@@ -9,13 +9,13 @@ const jakarta = Plus_Jakarta_Sans({
   weight: ['300', '400', '500', '600', '700', '800'],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://luxurybarbermalatya.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://viphairdesignermalatya.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Luxury Barber Malatya | En İyi Erkek Kuaförü & Berber Salonu',
-    template: '%s | Luxury Barber Malatya',
+    default: 'Vip Hair Designer Malatya | En İyi Erkek Kuaförü & Berber Salonu',
+    template: '%s | Vip Hair Designer Malatya',
   },
   description: "Malatya Yeşilyurt Fahri Kayahan Bulvarı'nda özel saç kesimi, sakal tasarımı ve erkek kişisel bakım hizmetleri. Saniye içinde 7/24 online randevu alın!",
   keywords: [
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     'fahri kayahan berber',
     'fahri kayahan kuaför',
     'malatya sakal tıraşı',
-    'luxury barber malatya',
+    'Vip Hair Designer malatya',
     'online berber randevu malatya',
   ],
-  authors: [{ name: 'Luxury Barber Malatya' }],
-  creator: 'Luxury Barber Malatya',
-  publisher: 'Luxury Barber Malatya',
+  authors: [{ name: 'Vip Hair Designer Malatya' }],
+  creator: 'Vip Hair Designer Malatya',
+  publisher: 'Vip Hair Designer Malatya',
   formatDetection: {
     email: false,
     address: false,
@@ -43,10 +43,10 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Luxury Barber Malatya | En Prestijli Erkek Kuaför Salonu',
+    title: 'Vip Hair Designer Malatya | En Prestijli Erkek Kuaför Salonu',
     description: "Malatya Yeşilyurt'ta ustalıkla işlenen tarzınız için online randevunuzu hemen oluşturun.",
     url: siteUrl,
-    siteName: 'Luxury Barber Malatya',
+    siteName: 'Vip Hair Designer Malatya',
     locale: 'tr_TR',
     type: 'website',
     images: [
@@ -54,13 +54,13 @@ export const metadata: Metadata = {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: 'Luxury Barber Malatya Erkek Kuaförü',
+        alt: 'Vip Hair Designer Malatya Erkek Kuaförü',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luxury Barber Malatya | Erkek Bakımında Lüksün Zirvesi',
+    title: 'Vip Hair Designer Malatya | Erkek Bakımında Lüksün Zirvesi',
     description: 'Malatya Yeşilyurt Fahri Kayahan Bulvarı salonumuzda 7/24 online randevu imkanı.',
     images: [`${siteUrl}/og-image.jpg`],
   },
@@ -89,3 +89,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
+

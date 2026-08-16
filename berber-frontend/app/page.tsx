@@ -1,9 +1,9 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
 import { Scissors, Clock, Star, Users, ChevronRight, Phone, MapPin, Award, ShieldCheck, Sparkles, Menu, X, Calendar, HelpCircle, ChevronDown } from 'lucide-react';
-// BerberUmut - Luxury Barber Shop Web Application
+// BerberUmut - Vip Hair Designer Shop Web Application
 import Logo from './components/Logo';
 import AnimatedBackground from './components/AnimatedBackground';
 
@@ -269,14 +269,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Why Choose Luxury Barber */}
+        {/* Why Choose Vip Hair Designer */}
         <section id="hakkimizda" className="py-12 md:py-16 px-4 sm:px-6 relative z-10">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-10 md:gap-12 items-center">
               <div>
-                <span className="text-[#D4AF37] text-xs uppercase tracking-[0.25em] font-semibold">Luxury Barber Deneyimi</span>
+                <span className="text-[#D4AF37] text-xs uppercase tracking-[0.25em] font-semibold">Vip Hair Designer Deneyimi</span>
                 <h2 className="text-3xl md:text-4xl font-sans font-extrabold mt-2 mb-6">
-                  Neden Malatya&apos;da <span className="bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent">Luxury Barber</span>?
+                  Neden Malatya&apos;da <span className="bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent">Vip Hair Designer</span>?
                 </h2>
                 
                 <div className="space-y-6">
@@ -423,7 +423,7 @@ export default function HomePage() {
           </Link>
           
           <div className="text-xs text-white/50 font-normal">
-            &copy; 2026 <span className="text-[#F5E6BE] font-semibold">Luxury Barber Malatya.</span>Talha Özcan. Tüm hakları saklıdır.
+            &copy; 2026 <span className="text-[#F5E6BE] font-semibold">Vip Hair Designer Malatya.</span>Talha Özcan. Tüm hakları saklıdır.
           </div>
 
           <div className="flex items-center gap-4 sm:gap-6 text-xs text-white/40 font-normal">
@@ -459,7 +459,7 @@ const testimonials = [
 
 const faqs = [
   {
-    q: 'Malatya Luxury Barber salonu tam nerede?',
+    q: 'Malatya Vip Hair Designer salonu tam nerede?',
     a: 'Salonumuz Malatya Yeşilyurt Fahri Kayahan Bulvarı üzerinde, rahat ulaşılabilir ve otopark imkanı olan prestijli bir konumda yer almaktadır.'
   },
   {
@@ -475,3 +475,4 @@ const faqs = [
     a: 'Pazartesi - Cumartesi günleri arasında 09:00 - 21:00 saatleri arasında kesintisiz randevulu hizmet vermekteyiz.'
   }
 ];
+

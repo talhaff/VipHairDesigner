@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
@@ -34,7 +34,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
             <div className="flex items-center gap-3">
               <Logo size="sm" showText={false} />
               <h1 className="font-serif font-bold text-lg bg-gradient-to-r from-[#F5E6BE] to-[#D4AF37] bg-clip-text text-transparent">
-                Luxury Barber <span className="text-xs font-sans text-white/40 font-normal uppercase ml-1">Yönetim Paneli</span>
+                Vip Hair Designer <span className="text-xs font-sans text-white/40 font-normal uppercase ml-1">Yönetim Paneli</span>
               </h1>
             </div>
 
@@ -51,3 +51,4 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 
@@ -77,7 +77,7 @@ export default function Logo({ className = '', showText = true, size = 'md' }: L
       {showText && (
         <div className="flex flex-col">
           <div className={`font-sans font-extrabold tracking-wider ${textSizes[size]} leading-none bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent uppercase`}>
-            Luxury Barber
+            Vip Hair Designer
           </div>
           <span className="text-[10px] tracking-[0.25em] text-[#C5A880]/80 font-sans uppercase font-semibold mt-0.5">
             Malatya &bull; Erkek Kuaförü
@@ -87,3 +87,4 @@ export default function Logo({ className = '', showText = true, size = 'md' }: L
     </div>
   );
 }
+

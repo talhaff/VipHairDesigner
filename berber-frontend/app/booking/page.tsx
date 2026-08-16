@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useEffect, useState } from 'react';
 import { useBookingStore } from '@/lib/store';
@@ -350,7 +350,7 @@ function Step5Success() {
   const router = useRouter();
 
   const whatsappMessage = encodeURIComponent(
-    'Merhaba Luxury Barber Malatya, web siteniz üzerinden randevumu oluşturdum. Randevumu onaylamak/bilgi almak istiyorum.'
+    'Merhaba Vip Hair Designer Malatya, web siteniz üzerinden randevumu oluşturdum. Randevumu onaylamak/bilgi almak istiyorum.'
   );
 
   return (
@@ -358,7 +358,7 @@ function Step5Success() {
       <CheckCircle2 className="w-20 h-20 sm:w-24 sm:h-24 text-[#D4AF37] mx-auto mb-6 drop-shadow-[0_0_25px_rgba(212,175,55,0.5)]" />
       <h2 className="text-2xl sm:text-3xl font-sans font-extrabold text-[#F5E6BE] mb-3 sm:mb-4">Randevunuz Başarıyla Alındı!</h2>
       <p className="text-white/70 mb-6 sm:mb-8 max-w-md mx-auto font-light leading-relaxed text-xs sm:text-sm px-2">
-        Luxury Barber Malatya salonumuzda sizleri ağırlamaktan onur duyacağız. Randevu detaylarınız sisteme kaydedilmiştir.
+        Vip Hair Designer Malatya salonumuzda sizleri ağırlamaktan onur duyacağız. Randevu detaylarınız sisteme kaydedilmiştir.
       </p>
 
       <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center max-w-md mx-auto">
@@ -381,3 +381,4 @@ function Step5Success() {
     </div>
   );
 }
+

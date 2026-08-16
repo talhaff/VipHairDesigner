@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
@@ -50,7 +50,7 @@ export default function AdminDashboard() {
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 sm:mb-8">
         <div>
           <h2 className="text-2xl sm:text-3xl font-sans font-bold text-white">Günlük Randevular</h2>
-          <p className="text-xs text-[#C5A880] mt-1 font-medium">Luxury Barber Malatya Salon Yönetimi</p>
+          <p className="text-xs text-[#C5A880] mt-1 font-medium">Vip Hair Designer Malatya Salon Yönetimi</p>
         </div>
         
         <div className="flex items-center justify-between w-full md:w-auto gap-3 bg-[#141414] rounded-2xl p-1.5 border border-[#D4AF37]/20 shadow-lg">
@@ -180,3 +180,4 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
