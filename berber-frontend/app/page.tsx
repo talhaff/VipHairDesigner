@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -180,7 +180,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-sm sm:text-base md:text-xl text-white/70 mb-8 max-w-2xl mx-auto font-normal leading-relaxed px-2">
-              Malatya Yeşilyurt Fahri Kayahan&apos;da uzman berber kadromuzla özel tasarım saç kesimi, sakal tıraşı ve erkek kişisel bakım hizmetleri sunuyoruz.
+              Malatya Battalgazi&apos;de uzman berber kadromuzla özel tasarım saç kesimi, sakal tıraşı ve erkek kişisel bakım hizmetleri sunuyoruz.
             </p>
 
             {/* Hero Actions */}
@@ -373,24 +373,51 @@ export default function HomePage() {
               <span className="text-[#D4AF37] text-xs uppercase tracking-[0.25em] font-semibold">İletişim & Konum</span>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-sans font-extrabold mt-2 mb-3">Malatya Salonumuz</h2>
               <p className="text-white/60 mb-6 sm:mb-8 max-w-lg mx-auto font-normal text-xs sm:text-sm">
-                Fahri Kayahan Bulvarı&apos;nda konforlu atmosferimizle hizmetinizdeyiz.
+                Malatya Battalgazi&apos;de konforlu atmosferimizle hizmetinizdeyiz.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto mb-8">
-                <div className="bg-[#0A0A0A]/60 backdrop-blur-md border border-white/10 p-5 rounded-2xl flex flex-col items-center hover:border-[#D4AF37]/40 transition-colors">
-                  <div className="w-10 h-10 rounded-full bg-[#D4AF37]/15 flex items-center justify-center mb-3 border border-[#D4AF37]/30">
-                    <MapPin className="w-5 h-5 text-[#D4AF37]" />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto mb-10">
+                {/* Contact Info */}
+                <div className="flex flex-col gap-4">
+                  <div className="bg-[#0A0A0A]/60 backdrop-blur-md border border-white/10 p-6 rounded-2xl flex flex-col items-center hover:border-[#D4AF37]/40 transition-colors h-full justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#D4AF37]/15 flex items-center justify-center mb-4 border border-[#D4AF37]/30">
+                      <MapPin className="w-6 h-6 text-[#D4AF37]" />
+                    </div>
+                    <h3 className="font-semibold text-white mb-2 text-base">Adres</h3>
+                    <p className="text-white/70 text-sm text-center">Battalgazi Merkez / Malatya</p>
                   </div>
-                  <h3 className="font-semibold text-white mb-1 text-sm">Adres</h3>
-                  <p className="text-white/70 text-xs">Fahri Kayahan Bulvarı, Yeşilyurt / Malatya</p>
+
+                  <div className="bg-[#0A0A0A]/60 backdrop-blur-md border border-white/10 p-6 rounded-2xl flex flex-col items-center hover:border-[#D4AF37]/40 transition-colors h-full justify-center">
+                    <div className="w-12 h-12 rounded-full bg-[#D4AF37]/15 flex items-center justify-center mb-4 border border-[#D4AF37]/30">
+                      <Phone className="w-6 h-6 text-[#D4AF37]" />
+                    </div>
+                    <h3 className="font-semibold text-white mb-3 text-base">Ustalarımız</h3>
+                    <div className="flex flex-col gap-3 w-full max-w-[240px]">
+                      <div className="flex items-center justify-between border-b border-white/5 pb-2">
+                        <span className="text-white/80 font-medium">Umut Berber</span>
+                        <a href="tel:+905525797002" className="text-[#F5E6BE] hover:text-[#D4AF37] transition-colors">0552 579 70 02</a>
+                      </div>
+                      <div className="flex items-center justify-between pt-1">
+                        <span className="text-white/80 font-medium">Yasin Berber</span>
+                        <a href="tel:+905347631791" className="text-[#F5E6BE] hover:text-[#D4AF37] transition-colors">0534 763 17 91</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="bg-[#0A0A0A]/60 backdrop-blur-md border border-white/10 p-5 rounded-2xl flex flex-col items-center hover:border-[#D4AF37]/40 transition-colors">
-                  <div className="w-10 h-10 rounded-full bg-[#D4AF37]/15 flex items-center justify-center mb-3 border border-[#D4AF37]/30">
-                    <Phone className="w-5 h-5 text-[#D4AF37]" />
-                  </div>
-                  <h3 className="font-semibold text-white mb-1 text-sm">Telefon & Bilgi</h3>
-                  <p className="text-white/70 text-xs">+90 (422) 325 44 00</p>
+                {/* Map */}
+                <div className="bg-[#0A0A0A]/60 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden min-h-[300px] h-full shadow-[0_0_20px_rgba(212,175,55,0.05)]">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100371.74549176326!2d38.291771199999995!3d38.33709085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x407636e2f1cdbbdd%3A0x6e9f16805177a4eb!2sBattalgazi%2FMalatya!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0, minHeight: '320px' }} 
+                    allowFullScreen={true} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Vip Hair Designer Malatya Battalgazi Harita Konumu"
+                    className="w-full h-full grayscale-[20%] contrast-[1.1]"
+                  />
                 </div>
               </div>
 
@@ -453,14 +480,14 @@ const features = [
 ];
 
 const testimonials = [
-  { text: 'Malatya\'da böyle kaliteli bir erkek kuaförü olması harika. Fahri Kayahan\'daki rahat konsept için teşekkürler!', name: 'Murat Y.' },
+  { text: 'Malatya\'da böyle kaliteli bir erkek kuaförü olması harika. Battalgazi\'deki rahat konsept için teşekkürler!', name: 'Murat Y.' },
   { text: 'Online randevu sistemi çok pratik. Beklemeden koltuğa oturup hizmet alıyorsunuz.', name: 'Selim K.' },
 ];
 
 const faqs = [
   {
     q: 'Malatya Vip Hair Designer salonu tam nerede?',
-    a: 'Salonumuz Malatya Yeşilyurt Fahri Kayahan Bulvarı üzerinde, rahat ulaşılabilir ve otopark imkanı olan prestijli bir konumda yer almaktadır.'
+    a: 'Salonumuz Malatya Battalgazi merkezinde, rahat ulaşılabilir ve otopark imkanı olan prestijli bir konumda yer almaktadır.'
   },
   {
     q: 'Online randevu nasıl alabilirim?',
