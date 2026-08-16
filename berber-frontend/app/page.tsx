@@ -162,57 +162,78 @@ export default function HomePage() {
 
       {/* Main Content Wrap for Semantic HTML */}
       <main>
-        {/* Hero Section */}
-        <section className="relative pt-32 pb-10 md:pt-40 md:pb-12 flex items-center justify-center z-10 px-4 sm:px-6">
-          <div className="text-center max-w-4xl mx-auto w-full">
+        {/* Hero Section with Cinematic Video Background */}
+        <section className="relative min-h-[95vh] flex items-center justify-center pt-20 px-4 sm:px-6 overflow-hidden">
+          {/* Video Background */}
+          <div className="absolute inset-0 w-full h-full z-0">
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              poster="/images/barber-hero.jpg"
+              className="w-full h-full object-cover object-center"
+            >
+              {/* You can drop your video into public/videos/barber-bg.mp4 */}
+              <source src="/videos/barber-bg.mp4" type="video/mp4" />
+            </video>
+            
+            {/* Premium Gradient Overlay to ensure text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-[#0A0A0A]/80 via-[#0A0A0A]/60 to-[#0A0A0A]" />
+            <div className="absolute inset-0 bg-black/40" /> {/* Extra darkening for contrast */}
+          </div>
+
+          <div className="relative z-10 text-center max-w-5xl mx-auto w-full flex flex-col items-center mt-16 sm:mt-20 md:mt-24">
             {/* Location Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#141414]/90 backdrop-blur-md border border-[#D4AF37]/35 rounded-full px-4 py-2 sm:px-5 sm:py-2 mb-6 text-[11px] sm:text-xs font-medium tracking-wide text-[#F5E6BE] shadow-[0_0_20px_rgba(212,175,55,0.12)]">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37] shrink-0" />
-              <span className="truncate">Malatya&apos;nın Seçkin Erkek Kuaförü</span>
+            <div className="inline-flex items-center gap-2 bg-[#141414]/70 backdrop-blur-md border border-[#D4AF37]/50 rounded-full px-5 py-2.5 mb-8 text-[11px] sm:text-xs font-semibold tracking-[0.2em] text-[#F5E6BE] shadow-[0_0_30px_rgba(212,175,55,0.2)] uppercase">
+              <Sparkles className="w-4 h-4 text-[#D4AF37] shrink-0" />
+              <span>Malatya&apos;nın Seçkin Erkek Kuaförü</span>
+              <Sparkles className="w-4 h-4 text-[#D4AF37] shrink-0" />
             </div>
 
             {/* Main Title */}
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-sans font-extrabold tracking-tight mb-6 leading-[1.18] sm:leading-[1.15]">
-              Malatya Erkek Kuaförü &amp;
-              <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[5rem] font-sans font-extrabold tracking-tight mb-8 leading-[1.1] sm:leading-[1.1] drop-shadow-2xl">
+              <span className="text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">Erkek Bakımında</span>
+              <br />
+              <span className="block mt-2 sm:mt-4 bg-gradient-to-r from-[#F5E6BE] via-[#D4AF37] to-[#AA8010] bg-clip-text text-transparent drop-shadow-[0_2px_15px_rgba(212,175,55,0.4)]">
                 Lüksün Zirvesi
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base md:text-xl text-white/70 mb-8 max-w-2xl mx-auto font-normal leading-relaxed px-2">
-              Malatya Battalgazi&apos;de uzman berber kadromuzla özel tasarım saç kesimi, sakal tıraşı ve erkek kişisel bakım hizmetleri sunuyoruz.
+            <p className="text-sm sm:text-lg md:text-xl text-white/90 mb-10 max-w-3xl mx-auto font-light leading-relaxed px-4 drop-shadow-lg">
+              Sıradan bir tıraştan çok daha fazlası... Malatya Battalgazi&apos;de ustalıkla harmanlanmış, size özel <strong className="text-[#D4AF37] font-semibold">premium bakım ritüelini</strong> keşfedin. Tarzınızı Vip Hair Designer farkıyla zirveye taşıyın.
             </p>
 
             {/* Hero Actions */}
-            <div className="flex flex-col sm:flex-row gap-3.5 sm:gap-4 justify-center items-center px-2">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full px-4">
               <Link
                 href="/booking"
-                className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#D4AF37] via-[#F5E6BE] to-[#AA8010] text-black font-bold px-8 py-3.5 rounded-2xl hover:shadow-[0_0_35px_rgba(212,175,55,0.4)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] text-base"
+                className="w-full sm:w-auto group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#D4AF37] via-[#F5E6BE] to-[#AA8010] text-black font-extrabold px-10 py-4 rounded-full hover:shadow-[0_0_40px_rgba(212,175,55,0.6)] transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] text-base sm:text-lg"
               >
-                <span>Hemen Randevu Oluştur</span>
-                <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <span>Randevunuzu Ayırtın</span>
+                <ChevronRight className="w-5 h-5 group-hover:translate-x-1.5 transition-transform" />
               </Link>
               
               <a
                 href="#hizmetler"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-[#D4AF37]/35 bg-[#141414]/80 backdrop-blur-md text-[#F5E6BE] font-semibold px-8 py-3.5 rounded-2xl hover:bg-[#1C1C1C] hover:border-[#D4AF37]/70 transition-all duration-300 text-base shadow-lg"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/30 bg-white/5 backdrop-blur-md text-white font-semibold px-10 py-4 rounded-full hover:bg-white/10 hover:border-white/50 transition-all duration-300 text-base sm:text-lg shadow-xl"
               >
-                Hizmet Kataloğu
+                Hizmetleri İncele
               </a>
             </div>
 
             {/* Key Stats */}
-            <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-4 max-w-2xl mx-auto pt-6 border-t border-[#D4AF37]/20 px-2">
+            <div className="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mx-auto pt-8 border-t border-white/10 px-2 w-full">
               {[
                 { value: '5.000+', label: 'Mutlu Müşteri' },
                 { value: '12+', label: 'Yıllık Deneyim' },
                 { value: '4.9★', label: 'Memnuniyet' },
               ].map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl font-sans font-extrabold bg-gradient-to-r from-[#F5E6BE] to-[#D4AF37] bg-clip-text text-transparent">
+                <div key={i} className="text-center group">
+                  <div className="text-2xl sm:text-3xl md:text-4xl font-sans font-extrabold bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
                     {stat.value}
                   </div>
-                  <div className="text-[10px] sm:text-xs text-white/50 mt-1 font-medium tracking-wide">{stat.label}</div>
+                  <div className="text-[11px] sm:text-sm text-[#D4AF37] mt-2 font-semibold tracking-[0.1em] uppercase">{stat.label}</div>
                 </div>
               ))}
             </div>
